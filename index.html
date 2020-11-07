@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #ddd;
+            }
+            .warning {
+                background-color: rgb(248, 215, 218);
+                color: #721c24;
+                border-radius: 0.75rem;
+                border: 1px solid #721c24;
+                padding: 0.75rem;
+            }
+            .warning strong {
+                display: block;
+            }
+        </style>
+        <script>
+            window.onload = function() {
+                var path = window.location.pathname;
+                if (path.endsWith('index.html')) {
+                    path = path.substr(path, path.length - 'index.html'.length);
+                }
+                var url = 'https://play.workadventu.re/_/global/'+window.location.host+path+'main.json';
+                document.getElementById('mapLink').href = url;
+                document.getElementById('mapLink').innerText = url;
+            };
+        </script>
+    </head>
+    <body>
+        <h1>chaosdorfadventure</h1>
+        <p class="warning">
+            <strong>3rd party hosted</strong>
+            This is an early preview.
+            At this point in time we are not running our own workadventure
+            instance. We use the one supplied by the authors.
+            This includes google tracking. We are working on getting our own
+            up and running as soon as possible!
+        </p>
+        This website contains a map for <a href="https://workadventu.re">Workadventu.re</a>.
+        <br/>
+        You can access this map at <a id="mapLink" href=""></a>
+    </body>
+</html>
+
