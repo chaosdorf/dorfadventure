@@ -1,0 +1,3 @@
+[submodule "tiles/matekiste"]
+	path = tiles/matekiste
+	url = git@github.com:telegnom/matekiste.git
