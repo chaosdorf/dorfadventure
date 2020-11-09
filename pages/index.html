@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dorfadventure</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script>
+            window.onload = function() {
+                var path = window.location.pathname;
+                if (path.endsWith('index.html')) {
+                    path = path.substr(path, path.length - 'index.html'.length);
+                }
+                var url = 'https://play.workadventu.re/_/global/'+window.location.host+path+'main.json';
+                document.getElementById('mapLink').href = url;
+                document.getElementById('mapLink').innerText = url;
+            };
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+            <h1>chaosdorfadventure</h1>
+            <div class="alert alert-danger" role="alert">
+              <h4 class="alert-heading">3rd Party hosted!</h4>
+              <p class="mb-0">
+                This is an early preview.
+                At this point in time we are not running our own workadventure
+                instance. We use the one supplied by the authors.
+                This <strong>includes google tracking</strong>. We are working on getting our own
+                up and running as soon as possible!
+              </p>
+            </div>
+            <p>
+            This website contains a map for <a href="https://workadventu.re">Workadventu.re</a>.
+            </p>
+            <p>
+            You can access this map at <a id="mapLink" href=""></a>
+            </p>
+            </div>
+        </div>
+    </body>
+</html>
+
