@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Dorfadventure</title>
         <link rel="stylesheet" href="docs/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script>
             window.onload = function() {
                 var path = window.location.pathname;
@@ -11,32 +13,38 @@
                 }
                 var url = 'https://play.workadventu.re/_/global/'+window.location.host+path+'main.json';
                 document.getElementById('mapLink').href = url;
-                document.getElementById('mapLink').innerText = url;
+              //  document.getElementById('mapLink').innerText = url;
             };
         </script>
     </head>
     <body>
-        <div class="container">
+        <main role="main" class="container">
             <div class="row">
-            <h1>chaosdorfadventure</h1>
-            <div class="alert alert-danger" role="alert">
-              <h4 class="alert-heading">3rd Party hosted!</h4>
-              <p class="mb-0">
-                This is an early preview.
-                At this point in time we are not running our own workadventure
-                instance. We use the one supplied by the authors.
-                This <strong>includes google tracking</strong>. We are working on getting our own
-                up and running as soon as possible!
-              </p>
+                <div class="col">
+                <h1>Dorfadventure</h1>
+                <div class="alert alert-danger" role="alert">
+                  <h4 class="alert-heading">3rd Party hosted!</h4>
+                  <p class="mb-0">
+                    Dies ist eine frühe Version und nur eine Vorschau.
+                    Gegenwärtig betreibt das Chaosdorf noch keine eingene 
+                    Workadventure Installation.
+                    Hinter den Kulissen arbeiten wir bereits unter Hochdruck an 
+                    einer eigenen Instanz.
+                    Diese Vorschau läuft auf den Servern der Macher:innen von
+                    Workadventure über die wir keine Kontrolle haben.
+                    <strong>
+                        Die verwendete Instanz nutzt Tracking von Google!
+                    </strong>
+                  </p>
+                </div>
+                </div>
             </div>
-            <p>
-            This website contains a map for <a href="https://workadventu.re">Workadventu.re</a>.
-            </p>
-            <p>
-            You can access this map at <a id="mapLink" href=""></a>
-            </p>
+            <div class="row">
+                <div class="col">
+                    Zum <em>Dorfadventuere</em> geht's hier entlang: <a class="btn btn-primary" id="mapLink" href="" role="button">Zum Dorfadventure</a>
+                </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
 
