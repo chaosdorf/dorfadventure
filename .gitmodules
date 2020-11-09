@@ -1,6 +1,9 @@
-[submodule "tiles/matekiste"]
-	path = tiles/matekiste
-	url = https://github.com/telegnom/matekiste.git
 [submodule "tiles/chaosdorftiles"]
 	path = tiles/chaosdorftiles
 	url = https://github.com/telegnom/chaosdorftiles.git
+[submodule "tiles/wa-matekiste"]
+	path = tiles/wa-matekiste
+	url = https://github.com/telegnom/wa-matekiste.git
+[submodule "tiles/wa-tools"]
+	path = tiles/wa-tools
+	url = https://github.com/telegnom/wa-tools.git
