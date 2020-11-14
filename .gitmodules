@@ -10,3 +10,6 @@
 [submodule "tiles/wa-stadtmobiliar"]
 	path = tiles/wa-stadtmobiliar
 	url = https://github.com/telegnom/wa-stadtmobiliar.git
+[submodule "tiles/wa-special_tiles"]
+	path = tiles/wa-special_tiles
+	url = https://github.com/telegnom/wa-special_tiles.git
