@@ -13,3 +13,6 @@
 [submodule "tiles/wa-special_tiles"]
 	path = tiles/wa-special_tiles
 	url = https://github.com/telegnom/wa-special_tiles.git
+[submodule "tiles/wa-furniture"]
+	path = tiles/wa-furniture
+	url = https://github.com/telegnom/wa-furniture.git
